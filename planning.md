@@ -9,3 +9,8 @@ Stage 2
 work on the delete button
 [x] add delete button to each item on the list
 
+stage 3
+Adds priority levels
+[x] select priority level for task before submitting
+[x] change color of the task according to the priority level
+

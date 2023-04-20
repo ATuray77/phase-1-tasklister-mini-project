@@ -13,12 +13,14 @@ function handleFormSubmit(e) {
   e.preventDefault()
   const task = e.target[0].value //accessing the user input. Many ways to do this
 
+  const priorityLevel =parseInt( e.target.priority.value) //delecting the priority level value
 
-  displayTaskValue(task)
+
+  displayTaskValue(task, priorityLevel)
 }
 
 //function to display the task
-function displayTaskValue(taskValue) {
+function displayTaskValue(taskValue, priorityLevel) {
  const taskUl =  document.getElementById("tasks") //selecting ul
  const taskli = document.createElement("li") //creates the li
 
@@ -28,12 +30,24 @@ function displayTaskValue(taskValue) {
  
  
  taskli.textContent = taskValue + " " //adds a text to the delete button
+ taskli.style.color = getPriorityColor(priorityLevel)
  taskli.appendChild(deleteTaskBtn) //adds delete button to the task list's li
  taskUl.appendChild(taskli)  //adds task list's li to the taskUl
 
 }
 
 function handleDeleteTask(e) {  //delete function
-  e.target.parentNode.remove()
-  
+  console.log(e)
+  e.target.parentNode.remove() 
+}
+
+function getPriorityColor(priorityLevel){
+  if (priorityLevel === 1) {
+      return "red"
+  } else if (priorityLevel === 2) {
+    return "blue"
+  } else {
+    return "green"
+  }
+
 }
