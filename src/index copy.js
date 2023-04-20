@@ -13,7 +13,7 @@ function handleFormSubmit(e) {
   e.preventDefault()
   const task = e.target[0].value //accessing the user input. Many ways to do this
 
-  const priorityLevel =parseInt( e.target.priority.value) //delecting the priority level value
+  const priorityLevel =parseInt( e.target.priority.value) //selecting the priority level value
 
 
   displayTaskValue(task, priorityLevel)

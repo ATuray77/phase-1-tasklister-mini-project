@@ -14,3 +14,8 @@ Adds priority levels
 [x] select priority level for task before submitting
 [x] change color of the task according to the priority level
 
+stage 3
+[] Allow the user to sort the priorities in both directions
+[] 
+[]
+
