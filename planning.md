@@ -6,3 +6,6 @@ task [x] - get the task from the input
 task [x] - display the data
 
 Stage 2
+work on the delete button
+[x] add delete button to each item on the list
+
