@@ -26,3 +26,7 @@ document.querySelector('#tasks').appendChild(li)
 function handleDelete(e) {
   e.target.parentNode.remove()
 }
+
+
+const h2 = document.querySelector('h2')
+console.log(h2.textContent)

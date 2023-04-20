@@ -1,0 +1,8 @@
+stage 1
+- what would I have to do to make this form work
+task [x] - initialize all things up front
+task [x] - get the form and listen to the form
+task [x] - get the task from the input
+task [x] - display the data
+
+Stage 2
